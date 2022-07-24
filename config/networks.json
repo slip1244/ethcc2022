@@ -1,0 +1,10 @@
+{
+	"137": {
+		"id": 137,
+		"name": "Polygon",
+		"color": "rgb(130, 71, 229)",
+		"bg": "rgb(242, 237, 252)",
+		"icon": "polygon.svg",
+		"explorer": "https://polygonscan.com"
+	}
+}

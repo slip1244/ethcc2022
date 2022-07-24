@@ -1,0 +1,47 @@
+{
+	"colors": {
+		"raw": {
+			"pink": "#f636aa",
+			"orange": "#ff8b6a",
+			"whitesmoke": "#F5F5F5",
+			"white": "#FFFFFF",
+			"black": "#161616",
+			"gray-1": "#D9D9D9",
+			"gray-2": "#afafaf",
+			"gray-3": "#999999",
+			"gray-4": "#757575",
+			"gray-5": "#323232"
+		},
+	
+		"elements": {
+			"light": {
+				"bg": "whitesmoke",
+				"bg-alt": "white",
+				"accent": "pink",
+				"accent-alt": "orange",
+				"text": "black",
+				"text-gray": "gray-3",
+				"border-color": "gray-3"
+			},
+			"dark": {
+				"bg": "black",
+				"bg-alt": "gray-5",
+				"accent": "pink",
+				"accent-alt": "orange",
+				"text": "white",
+				"text-gray": "gray-4",
+				"border-color": "gray-5"
+			}
+		}
+	},
+	"fonts": {
+		"Roboto": "GOOGLE",
+		"NB International Pro": {
+			"300": "NB-International-Pro-Light.ttf",
+			"400": "NB-International-Pro-Regular.ttf",
+			"700": "NB-International-Pro-Bold.ttf"
+		}
+	},
+	"titleFont": "NB International Pro",
+	"bodyFont": "Roboto"
+}
