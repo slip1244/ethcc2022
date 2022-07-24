@@ -111,17 +111,15 @@ const Header = ({ style, theme, setTheme }) => {
 	return (
 		<>
 			<div className="header row between" style={style}>
-				<Link href="/">
-					<a className="logo-name-container row">
+					<div className="logo-name-container row">
 						<img className="logo" src={project.logo} />
 						<div className="name title">Protocol</div>
-					</a>
-				</Link>
+					</div>
 
 				<div className="page-links row center-a">
-					<Link href="/launch">
+					<Link href="/">
 						<a className={classNames("page-link", "title", {
-							active: router.pathname == "/launch"
+							active: router.pathname == "/"
 						})}>Launch</a>
 					</Link>
 
@@ -187,7 +185,6 @@ const Header = ({ style, theme, setTheme }) => {
 					height: 2px;
 					z-index: -1;
 					border-radius: 2px;
-					color: var(--white);
 					background: linear-gradient(111.3deg, var(--accent) 9.6%, var(--accent-alt) 93.6%);
 				}
 
