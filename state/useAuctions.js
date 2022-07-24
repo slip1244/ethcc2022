@@ -19,7 +19,9 @@ function useAuction(account, signer, network) {
 		if (PriceTracker) {
 			PriceTracker.count().then(_auctionCount => {
 				setAuctionNumber(_auctionCount)
-				for (let i = 0; i < au)
+				for (let i = 0; i < _auctionCount; i++) {
+					
+				}
 			})
 		}
 	}

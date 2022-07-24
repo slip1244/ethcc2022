@@ -32,7 +32,7 @@ function useLaunch(account, signer, network, range, reward, collectionAddress, t
     }, [account, network])
 
 	function launch() {
-		PriceTracker.launch(collectionAddress, tokenId, range[0].getTime() / 1000, range[1].getTime() / 1000, unparse(reward, 18))
+		PriceTracker.launch(collectionAddress, tokenId, Math.floor(range[0].getTime() / 1000), Math.floor(range[1].getTime() / 1000), unparse(reward, 18))
 	}
 
 	return {

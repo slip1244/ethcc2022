@@ -28,7 +28,7 @@ const Launch = ({ theme }) => {
 	return (
 		<>
 			<div className="launch-container card col between">
-				<div className="launch-header title">Launch Auction #{parse(AuctionLaunch.auctionNumber, 0)}</div>
+				<div className="launch-header title">Launch Auction #{AuctionLaunch.auctionNumber.toString()}</div>
 				<div>
 					<div className="label">Start and End</div>
 					<DateRangePicker format="yyyy-MM-dd HH:mm:ss" disabledDate={beforeToday()} onChange={(range) => setRange(range)}/>
