@@ -16,7 +16,7 @@ const Metadata = () => {
 			<meta name="description" content={project.desc}></meta>
 			<meta property="og:title" content={project.name}></meta>
 			<meta property="og:type" content="website"></meta>
-			<meta property="og:image" content={`https://${project.domain}${project.logo}`}></meta>
+			<meta property="og:image" content={`https://gateway.pinata.cloud/ipfs/QmeN4Rfxxof5dhKVaw1xSzJNjENq9YquxJuFej4svf7thL`}></meta>
 			<meta property="og:description" content={project.desc}></meta>
 
 			{/* <meta name="twitter:card" content="summary"></meta>
@@ -27,7 +27,7 @@ const Metadata = () => {
 			<meta name="twitter:creator" content={project.twitter}></meta> */}
 
 			<title>{project.name}</title>
-			<link rel="icon" href={project.logo}></link>
+			<link rel="icon" href="https://gateway.pinata.cloud/ipfs/QmWMDGk9RVfiSSkXtVMUUXE6omeVN8Q9eaQXo2pTPQ5MGf"></link>
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 			{Object.keys(style.fonts).filter(f => style.fonts[f] == "GOOGLE").map((font) => 
 				(

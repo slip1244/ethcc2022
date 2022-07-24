@@ -112,7 +112,7 @@ const Header = ({ style, theme, setTheme }) => {
 		<>
 			<div className="header row between" style={style}>
 					<div className="logo-name-container row">
-						<img className="logo" src={project.logo} />
+						<img className="logo" src="https://gateway.pinata.cloud/ipfs/QmeN4Rfxxof5dhKVaw1xSzJNjENq9YquxJuFej4svf7thL" />
 						<div className="name title">Protocol</div>
 					</div>
 
