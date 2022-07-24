@@ -4,6 +4,9 @@ import Layout from "../components/Layout.jsx"
 import Head from "next/head"
 import Error from "next/error"
 import { useState, useEffect } from "react"
+import { CustomProvider } from 'rsuite';
+import 'rsuite/dist/rsuite.min.css'
+
 
 const Metadata = () => {
 	return (
@@ -61,10 +64,12 @@ const App = ({ Component, pageProps }) => {
 
 	return (
 		<>
+			
 			<Metadata />
-			<Layout theme={theme} setTheme={setTheme}>
-				<Component {...pageProps} theme={theme}></Component>
-			</Layout>
+				<Layout theme={theme} setTheme={setTheme}>
+					<Component {...pageProps} theme={theme}></Component>
+				</Layout>
+
 
 			<style jsx global>{`
                 :root {
@@ -74,7 +79,7 @@ const App = ({ Component, pageProps }) => {
                 }
 
                 * {
-                    color: var(--text);
+                    // color: var(--text);
                     box-sizing: border-box;
 					scrollbar-color: var(--accent);
 					scrollbar-width: thin;
@@ -156,7 +161,7 @@ const App = ({ Component, pageProps }) => {
 				}
 
 				.button.tertiary, button.tertiary {
-					color: var(--bg-alt);
+					color: var(--white);
 					background: linear-gradient(to bottom right, var(--accent), var(--accent-alt)) padding-box,
 						linear-gradient(to bottom right, var(--accent), var(--accent-alt)) border-box;
 				}

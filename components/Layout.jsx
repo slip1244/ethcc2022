@@ -112,7 +112,7 @@ const Header = ({ style, theme, setTheme }) => {
 		<>
 			<div className="header row between" style={style}>
 				<Link href="/">
-					<a className="logo-name-container row center-a">
+					<a className="logo-name-container row">
 						<img className="logo" src={project.logo} />
 						<div className="name title">Protocol</div>
 					</a>
@@ -156,6 +156,8 @@ const Header = ({ style, theme, setTheme }) => {
 					height: 100%;
 					gap: 12px;
 					height: 32px;
+					display: flex;
+					align-items: end;
 				}
 
 				.logo {
@@ -163,10 +165,17 @@ const Header = ({ style, theme, setTheme }) => {
 				}
 
 				.name {
-					font-size: 1.8em;
+					font-size: 2.5em;
 					font-weight: 600;
 					position: relative;
 					z-index: 9999;
+					color: var(--text);
+					text-decoration: none;
+				}
+
+				.name:hover {
+					text-decoration: none;
+
 				}
 
 				.name::before {
@@ -178,6 +187,7 @@ const Header = ({ style, theme, setTheme }) => {
 					height: 2px;
 					z-index: -1;
 					border-radius: 2px;
+					color: var(--white);
 					background: linear-gradient(111.3deg, var(--accent) 9.6%, var(--accent-alt) 93.6%);
 				}
 

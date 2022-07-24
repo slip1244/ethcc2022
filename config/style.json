@@ -10,7 +10,7 @@
 			"gray-2": "#afafaf",
 			"gray-3": "#999999",
 			"gray-4": "#757575",
-			"gray-5": "#323232"
+			"gray-5": "#252525"
 		},
 	
 		"elements": {
@@ -30,7 +30,7 @@
 				"accent-alt": "orange",
 				"text": "white",
 				"text-gray": "gray-4",
-				"border-color": "gray-5"
+				"border-color": "gray-4"
 			}
 		}
 	},
@@ -43,5 +43,5 @@
 		}
 	},
 	"titleFont": "NB International Pro",
-	"bodyFont": "Roboto"
+	"bodyFont": "NB International Pro"
 }
